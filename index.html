@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bondli — Investor One-Pager</title>
+  <title>Bondli — A smart communications platform for inmates and their families</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Epilogue:wght@300;400;500;600&display=swap"
     rel="stylesheet">
@@ -170,7 +170,7 @@
       color: var(--gold);
       border-bottom: 1px solid var(--gold-line);
       padding-bottom: 8px;
-      margin-bottom: 18px;
+      margin-bottom: 10px;
       display: block;
     }
 
@@ -324,6 +324,28 @@
     .volume-note strong {
       color: var(--ink);
       font-weight: 500;
+    }
+
+    .rev-group-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 0 4px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .rev-group-note {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--gold);
+    }
+
+    .rev-group-header+.rev-row {
+      border-top: none;
+    }
+
+    .rev-group-spacer {
+      height: 6px;
     }
 
     /* ── MARKET ── */
@@ -597,32 +619,31 @@
     <div class="prob-block">
       <span class="prob-num">$437M</span>
       <span class="prob-label">Correctional officer overtime expense (2024)</span>
-      <div class="prob-body">Officers manually review thousands of messages on top of 16-hour shifts. <strong>30% annual
+      <div class="prob-body">Manual review of thousands of messages — on top of 16-hour shifts. <strong>30% annual
           turnover rate</strong>.</div>
     </div>
 
     <div class="prob-block">
       <span class="prob-num">7+ states</span>
       <span class="prob-label">Active lawsuits against Securus</span>
-      <div class="prob-body">Active lawsuits in 7+ states for recording attorney-client calls. Any facility running
-        their software is a named <strong>co-defendant risk</strong>.</div>
+      <div class="prob-body">Recording attorney-client calls in 7+ states — every facility on their platform a named
+        <strong>co-defendant risk</strong>.
+      </div>
     </div>
 
 
     <div class="prob-block">
       <span class="prob-num">66%</span>
       <span class="prob-label">U.S. recidivism rate (rearrested within 3 years)</span>
-      <div class="prob-body">States spend <strong>$8B a year on reincarceration</strong>. States that lowered
-        communication costs saw
-        measurable drops in reoffending. This is a solvable problem.</div>
+      <div class="prob-body"><strong>$8B a year on reincarceration</strong> — states that lowered communication costs
+        saw measurable drops in reoffending.</div>
     </div>
 
     <div class="prob-block">
       <span class="prob-num">$500/mo</span>
       <span class="prob-label">Average family communications spend</span>
-      <div class="prob-body">On a $1,400/month household income. <strong>Families have nowhere else to go</strong>.
-        Providers have no
-        reason to improve.</div>
+      <div class="prob-body">On a $1,400/month household income — <strong>nowhere else to go, no incentive for providers
+          to improve</strong>.</div>
     </div>
   </div>
 
@@ -672,28 +693,31 @@
     <!-- REVENUE -->
     <div class="section rev-section two-thirds">
       <span class="sec-label">Revenue Model</span>
-      <div class="rev-row">
+      <div class="rev-group-header">
         <span class="rev-tag tag-facility">Facility</span>
+        <span class="rev-group-note">Plug-and-play — works with existing systems</span>
+      </div>
+      <div class="rev-row">
         <span class="rev-name">Facility analytics dashboard</span>
         <span class="rev-note">Behavioral data, grant reporting, budget docs</span>
       </div>
       <div class="rev-row">
-        <span class="rev-tag tag-facility">Facility</span>
         <span class="rev-name">Anonymized data licensing</span>
         <span class="rev-note">Sold to researchers, policy orgs, state DoCs</span>
       </div>
       <div class="rev-row">
-        <span class="rev-tag tag-facility">Facility</span>
         <span class="rev-name">AI moderation licensing</span>
         <span class="rev-note">Immigration detentions, residential treatment, K–12</span>
       </div>
-      <div class="rev-row">
+      <div class="rev-group-spacer"></div>
+      <div class="rev-group-header">
         <span class="rev-tag tag-user">User</span>
+      </div>
+      <div class="rev-row">
         <span class="rev-name">Subscription plans</span>
         <span class="rev-note">ARPU ~$150/mo · 20–50% savings over incumbents</span>
       </div>
       <div class="rev-row">
-        <span class="rev-tag tag-user">User</span>
         <span class="rev-name">Family plans</span>
         <span class="rev-note">Bundled pricing for households with multiple contacts</span>
       </div>
